@@ -1,3 +1,5 @@
 # Cisco ENAUTO exam practice
 
-I am mostly following the [Cisco ENAUTO Exam](https://learningnetwork.cisco.com/s/enauto-exam-topics) for now.
+## Resources
+[Cisco Developer](https://developer.cisco.com/)
+[Cisco ISE API](https://developer.cisco.com/docs/identity-services-engine/latest/5g-openapi/)

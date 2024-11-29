@@ -1,3 +1,7 @@
+# This file was for testing json.dumps()
+# json.dumps() helps print out dictionaries in a pretty format
+# json.dump() is used for creating a json file
+
 import json
 
 my_dict = {
