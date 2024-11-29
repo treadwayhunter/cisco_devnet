@@ -1,0 +1,15 @@
+<system>
+    <hostname>Switch1</hostname>
+    <services>
+        <ssh>true</ssh>
+        <http>false</http>
+    </services>
+    <interface>
+        <name>GigabitEthernet0/0</name>
+        <description>Management</description>
+    </interface>
+    <interface>
+        <name>GigabitEthernet0/1</name>
+        <description>Uplink</description>
+    </interface>
+</system>

@@ -1,0 +1,38 @@
+module complex-interface {
+  namespace "urn:complex-interface";
+  prefix ci;
+
+  container interfaces {
+    list interface {
+      key "name";
+      leaf name {
+        type string;
+      }
+      leaf description {
+        type string;
+        mandatory true;
+      }
+      container settings {
+        leaf mtu {
+          type uint16 {
+            range "576..9000";
+          }
+          default "1500";
+        }
+        leaf speed {
+          type enumeration {
+            enum "10Mbps";
+            enum "100Mbps";
+            enum "1Gbps";
+            enum "10Gbps";
+          }
+          default "1Gbps";
+        }
+      }
+      leaf enabled {
+        type boolean;
+        default "true";
+      }
+    }
+  }
+}

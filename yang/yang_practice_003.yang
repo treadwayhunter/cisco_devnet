@@ -1,0 +1,27 @@
+module system-config {
+  namespace "urn:system-config";
+  prefix sc;
+
+  container system {
+    leaf hostname {
+      type string;
+    }
+    container services {
+      leaf ssh {
+        type boolean;
+      }
+      leaf http {
+        type boolean;
+      }
+    }
+    list interface {
+      key "name";
+      leaf name {
+        type string;
+      }
+      leaf description {
+        type string;
+      }
+    }
+  }
+}

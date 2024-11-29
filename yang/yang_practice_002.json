@@ -1,0 +1,21 @@
+{
+  "system": {
+    "hostname": "Switch1",
+    "services": {
+      "ssh": true,
+      "http": false
+    },
+    "interfaces": {
+      "interface": [
+        {
+          "name": "GigabitEthernet0/0",
+          "description": "Management"
+        },
+        {
+          "name": "GigabitEthernet0/1",
+          "description": "Uplink"
+        }
+      ]
+    }
+  }
+}
