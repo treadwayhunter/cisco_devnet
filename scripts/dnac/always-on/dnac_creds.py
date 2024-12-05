@@ -1,0 +1,7 @@
+URL = 'https://sandboxdnac2.cisco.com'
+TOKEN_PATH = 'dna/system/api/v1/auth/token'
+TOKEN_URL = f'{URL}/{TOKEN_PATH}'
+DEVICES_PATH = 'dna/intent/api/v1/network-device'
+DEVICES_URL = f'{URL}/{DEVICES_PATH}'
+USER = 'devnetuser'
+PASSWORD = 'Cisco123!'
