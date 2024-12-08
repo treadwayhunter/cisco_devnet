@@ -1,33 +1,49 @@
-# This gets a list of internal users from ISE
-
 import requests
 from requests.auth import HTTPBasicAuth
+from ise_configs import ERS_USER, ERS_PASS, HOST
 import json
 
-HOST = '10.10.20.77'
-USER = 'admin'
-PASSWORD = 'QAWSedrf1234!'
-ENDPOINT = 'ers/config/internaluser'
+# return a list of resources
+def get_internalusers(url, user, password):
 
-BASE_URL = f'https://{HOST}/{ENDPOINT}'
 
-HEADERS = {
-    'Content-Type': 'application/json',
-    'Accept': 'application/json'
-}
+    resource_list = []
 
-try:
-    response = requests.get(BASE_URL, auth=HTTPBasicAuth(USER, PASSWORD), headers=HEADERS, verify=False, timeout=10)
+    headers = {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+    }
+    try:
+        response = requests.get(url, auth=HTTPBasicAuth(user, password), headers=headers, verify=False, timeout=5)
+        print(response.status_code)
+        if response.status_code != 200:
+            print('Something is broke')
+            return []
 
-    print(f'Status Code: {response.status_code}')
-    #print(f'Response Text: {response.text}')
-    #response.raise_for_status()
+        #print(json.dumps(response.json(), indent=4))
+        # make recursive calls to get all
+        search_result = response.json()['SearchResult']
+        endpoints = search_result['resources']
 
-    users = response.json()
-    print('Configured Users:')
-    print(json.dumps(users, indent=4))
+        print(search_result['nextPage'])
 
-    with open('internal_users.json', 'w') as file:
-        json.dump(users, file, indent=4)
-except requests.exceptions.RequestException as e:
-    print(f'An error has occurred: {e}')
+        resource_list = [*endpoints]
+
+        if 'nextPage' in search_result:
+            print('There is a next page')
+            href = search_result['nextPage']['href']
+            resource_list = [*resource_list, *get_internalusers(href, user, password)]
+
+
+
+        #print(json.dumps(endpoints, indent=4))
+
+    except Exception as e:
+        print(f'{e}')
+
+    return resource_list
+
+if __name__ == '__main__':
+    endpoint = 'ers/config/internaluser?size=100&page=1'
+    url = f'{HOST}/{endpoint}'
+    print(get_internalusers(url, ERS_USER, ERS_PASS))
