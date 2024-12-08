@@ -4,6 +4,8 @@ from ise_configs import ERS_USER, ERS_PASS, HOST
 import json
 
 # return a list of resources
+# the endpoint for internalusers is paginated, only returns a select amount.
+# This function runs recursively, running until every page of resources has been added to the list
 def get_internalusers(url, user, password):
 
 
@@ -16,12 +18,10 @@ def get_internalusers(url, user, password):
     try:
         response = requests.get(url, auth=HTTPBasicAuth(user, password), headers=headers, verify=False, timeout=5)
         print(response.status_code)
-        if response.status_code != 200:
-            print('Something is broke')
+        if response.status_code != 200: # in case a page is not gotten in the recursive call, this should be editted.
+            print(f'Something is broke: {url}')
             return []
 
-        #print(json.dumps(response.json(), indent=4))
-        # make recursive calls to get all
         search_result = response.json()['SearchResult']
         endpoints = search_result['resources']
 
@@ -29,14 +29,10 @@ def get_internalusers(url, user, password):
 
         resource_list = [*endpoints]
 
+        # make recursive calls for each page
         if 'nextPage' in search_result:
-            print('There is a next page')
             href = search_result['nextPage']['href']
             resource_list = [*resource_list, *get_internalusers(href, user, password)]
-
-
-
-        #print(json.dumps(endpoints, indent=4))
 
     except Exception as e:
         print(f'{e}')
