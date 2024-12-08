@@ -1,0 +1,6 @@
+DNAC_URL = 'https://10.10.20.85'
+TOKEN_ENDPOINT = '/dna/system/api/v1/auth/token'
+OVERALL_HEALTH_ENDPOINT = '/dna/intent/api/v1/network-health'
+USER = 'admin'
+PASSWORD = 'Cisco1234!'
+TOKEN_FILE = 'C:/Users/tread/OneDrive/Desktop/py/cisco_devnet/scripts/catalyst-center-sandbox/token.json'
