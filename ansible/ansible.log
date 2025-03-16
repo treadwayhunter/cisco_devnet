@@ -1,0 +1,809 @@
+2025-03-16 16:06:23,811 p=1609 u=hunter n=ansible WARNING| [WARNING]: Skipping key (ansible_user) in group (all) as it is not a mapping,
+it is a <class 'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2025-03-16 16:06:23,811 p=1609 u=hunter n=ansible WARNING| [WARNING]: Skipping key (ansible_password) in group (all) as it is not a
+mapping, it is a <class 'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2025-03-16 16:06:23,811 p=1609 u=hunter n=ansible WARNING| [WARNING]: Skipping key (ansible_connection) in group (all) as it is not a
+mapping, it is a <class 'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2025-03-16 16:06:23,811 p=1609 u=hunter n=ansible WARNING| [WARNING]: Skipping key (ansible_become) in group (all) as it is not a mapping,
+it is a <class 'bool'>
+
+2025-03-16 16:06:23,811 p=1609 u=hunter n=ansible WARNING| [WARNING]: Skipping key (ansible_become_method) in group (all) as it is not a
+mapping, it is a <class 'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2025-03-16 16:06:24,225 p=1609 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] **********************************
+2025-03-16 16:06:24,243 p=1609 u=hunter n=ansible INFO| TASK [Gathering Facts] *********************************************************
+2025-03-16 16:06:25,622 p=1609 u=hunter n=ansible INFO| fatal: [switch1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: hunter@10.10.20.48: Permission denied (publickey,keyboard-interactive,password).", "unreachable": true}
+2025-03-16 16:06:25,624 p=1609 u=hunter n=ansible INFO| PLAY RECAP *********************************************************************
+2025-03-16 16:06:25,624 p=1609 u=hunter n=ansible INFO| switch1                    : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2025-03-16 16:08:59,362 p=1676 u=hunter n=ansible WARNING| [WARNING]:  * Failed to parse
+/Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml with auto
+plugin: We were unable to read either as JSON nor YAML, these are the errors we
+got from each: JSON: Expecting value: line 1 column 1 (char 0)  Syntax Error
+while loading YAML.   mapping values are not allowed in this context. mapping
+values are not allowed in this context   in "<unicode string>", line 12, column
+21  The error appears to be in
+'/Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml': line 12,
+column 21, but may be elsewhere in the file depending on the exact syntax
+problem.  The offending line appears to be:        ansible_host: 10.10.20.48
+ansible_user: developer                     ^ here
+
+2025-03-16 16:08:59,362 p=1676 u=hunter n=ansible WARNING| [WARNING]:  * Failed to parse
+/Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml with yaml
+plugin: We were unable to read either as JSON nor YAML, these are the errors we
+got from each: JSON: Expecting value: line 1 column 1 (char 0)  Syntax Error
+while loading YAML.   mapping values are not allowed in this context. mapping
+values are not allowed in this context   in "<unicode string>", line 12, column
+21  The error appears to be in
+'/Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml': line 12,
+column 21, but may be elsewhere in the file depending on the exact syntax
+problem.  The offending line appears to be:        ansible_host: 10.10.20.48
+ansible_user: developer                     ^ here
+
+2025-03-16 16:08:59,362 p=1676 u=hunter n=ansible WARNING| [WARNING]:  * Failed to parse
+/Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml with ini
+plugin: Invalid host pattern 'all:' supplied, ending in ':' is not allowed,
+this character is reserved to provide a port.
+
+2025-03-16 16:08:59,362 p=1676 u=hunter n=ansible WARNING| [WARNING]: Unable to parse
+/Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml as an
+inventory source
+
+2025-03-16 16:08:59,362 p=1676 u=hunter n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-16 16:08:59,364 p=1676 u=hunter n=ansible WARNING| [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2025-03-16 16:08:59,458 p=1676 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] **********************************
+2025-03-16 16:08:59,458 p=1676 u=hunter n=ansible INFO| skipping: no hosts matched
+2025-03-16 16:08:59,458 p=1676 u=hunter n=ansible INFO| PLAY RECAP *********************************************************************
+2025-03-16 16:09:24,443 p=1700 u=hunter n=ansible WARNING| [WARNING]:  * Failed to parse
+/Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml with auto
+plugin: We were unable to read either as JSON nor YAML, these are the errors we
+got from each: JSON: Expecting value: line 1 column 1 (char 0)  Syntax Error
+while loading YAML.   mapping values are not allowed in this context. mapping
+values are not allowed in this context   in "<unicode string>", line 12, column
+21  The error appears to be in
+'/Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml': line 12,
+column 21, but may be elsewhere in the file depending on the exact syntax
+problem.  The offending line appears to be:        ansible_host: 10.10.20.48
+ansible_user: developer                     ^ here
+
+2025-03-16 16:09:24,443 p=1700 u=hunter n=ansible WARNING| [WARNING]:  * Failed to parse
+/Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml with yaml
+plugin: We were unable to read either as JSON nor YAML, these are the errors we
+got from each: JSON: Expecting value: line 1 column 1 (char 0)  Syntax Error
+while loading YAML.   mapping values are not allowed in this context. mapping
+values are not allowed in this context   in "<unicode string>", line 12, column
+21  The error appears to be in
+'/Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml': line 12,
+column 21, but may be elsewhere in the file depending on the exact syntax
+problem.  The offending line appears to be:        ansible_host: 10.10.20.48
+ansible_user: developer                     ^ here
+
+2025-03-16 16:09:24,443 p=1700 u=hunter n=ansible WARNING| [WARNING]:  * Failed to parse
+/Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml with ini
+plugin: Invalid host pattern 'all:' supplied, ending in ':' is not allowed,
+this character is reserved to provide a port.
+
+2025-03-16 16:09:24,443 p=1700 u=hunter n=ansible WARNING| [WARNING]: Unable to parse
+/Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml as an
+inventory source
+
+2025-03-16 16:09:24,443 p=1700 u=hunter n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-16 16:09:24,444 p=1700 u=hunter n=ansible WARNING| [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2025-03-16 16:09:24,548 p=1700 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] **********************************
+2025-03-16 16:09:24,548 p=1700 u=hunter n=ansible INFO| skipping: no hosts matched
+2025-03-16 16:09:24,548 p=1700 u=hunter n=ansible INFO| PLAY RECAP *********************************************************************
+2025-03-16 16:09:37,835 p=1721 u=hunter n=ansible WARNING| [WARNING]:  * Failed to parse
+/Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml with auto
+plugin: We were unable to read either as JSON nor YAML, these are the errors we
+got from each: JSON: Expecting value: line 1 column 1 (char 0)  Syntax Error
+while loading YAML.   mapping values are not allowed in this context. mapping
+values are not allowed in this context   in "<unicode string>", line 13, column
+21  The error appears to be in
+'/Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml': line 13,
+column 21, but may be elsewhere in the file depending on the exact syntax
+problem.  The offending line appears to be:        ansible_host: 10.10.20.48
+ansible_user: developer                     ^ here
+
+2025-03-16 16:09:37,835 p=1721 u=hunter n=ansible WARNING| [WARNING]:  * Failed to parse
+/Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml with yaml
+plugin: We were unable to read either as JSON nor YAML, these are the errors we
+got from each: JSON: Expecting value: line 1 column 1 (char 0)  Syntax Error
+while loading YAML.   mapping values are not allowed in this context. mapping
+values are not allowed in this context   in "<unicode string>", line 13, column
+21  The error appears to be in
+'/Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml': line 13,
+column 21, but may be elsewhere in the file depending on the exact syntax
+problem.  The offending line appears to be:        ansible_host: 10.10.20.48
+ansible_user: developer                     ^ here
+
+2025-03-16 16:09:37,835 p=1721 u=hunter n=ansible WARNING| [WARNING]:  * Failed to parse
+/Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml with ini
+plugin: Invalid host pattern 'all:' supplied, ending in ':' is not allowed,
+this character is reserved to provide a port.
+
+2025-03-16 16:09:37,835 p=1721 u=hunter n=ansible WARNING| [WARNING]: Unable to parse
+/Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml as an
+inventory source
+
+2025-03-16 16:09:37,835 p=1721 u=hunter n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-16 16:09:37,837 p=1721 u=hunter n=ansible WARNING| [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2025-03-16 16:09:37,903 p=1721 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] **********************************
+2025-03-16 16:09:37,903 p=1721 u=hunter n=ansible INFO| skipping: no hosts matched
+2025-03-16 16:09:37,903 p=1721 u=hunter n=ansible INFO| PLAY RECAP *********************************************************************
+2025-03-16 16:09:48,797 p=1738 u=hunter n=ansible WARNING| [WARNING]:  * Failed to parse /Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml with auto plugin: We were unable to read either as JSON nor YAML, these are the errors we got from each: JSON:
+Expecting value: line 1 column 1 (char 0)  Syntax Error while loading YAML.   mapping values are not allowed in this context. mapping values are not allowed in this context   in "<unicode string>", line 13,
+column 21  The error appears to be in '/Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml': line 13, column 21, but may be elsewhere in the file depending on the exact syntax problem.  The
+offending line appears to be:        ansible_host: 10.10.20.48         ansible_user: developer                     ^ here
+
+2025-03-16 16:09:48,797 p=1738 u=hunter n=ansible WARNING| [WARNING]:  * Failed to parse /Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml with yaml plugin: We were unable to read either as JSON nor YAML, these are the errors we got from each: JSON:
+Expecting value: line 1 column 1 (char 0)  Syntax Error while loading YAML.   mapping values are not allowed in this context. mapping values are not allowed in this context   in "<unicode string>", line 13,
+column 21  The error appears to be in '/Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml': line 13, column 21, but may be elsewhere in the file depending on the exact syntax problem.  The
+offending line appears to be:        ansible_host: 10.10.20.48         ansible_user: developer                     ^ here
+
+2025-03-16 16:09:48,797 p=1738 u=hunter n=ansible WARNING| [WARNING]:  * Failed to parse /Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml with ini plugin: Invalid host pattern 'all:' supplied, ending in ':' is not allowed, this character is
+reserved to provide a port.
+
+2025-03-16 16:09:48,797 p=1738 u=hunter n=ansible WARNING| [WARNING]: Unable to parse /Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml as an inventory source
+
+2025-03-16 16:09:48,797 p=1738 u=hunter n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-16 16:09:48,798 p=1738 u=hunter n=ansible WARNING| [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-03-16 16:09:48,864 p=1738 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] ******************************************************************************************************************************************************************
+2025-03-16 16:09:48,864 p=1738 u=hunter n=ansible INFO| skipping: no hosts matched
+2025-03-16 16:09:48,864 p=1738 u=hunter n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************************************
+2025-03-16 16:10:01,220 p=1758 u=hunter n=ansible WARNING| [WARNING]:  * Failed to parse /Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml with auto plugin: no root 'plugin' key found,
+'/Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml' is not a valid YAML inventory plugin config file
+
+2025-03-16 16:10:01,220 p=1758 u=hunter n=ansible WARNING| [WARNING]:  * Failed to parse /Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml with yaml plugin: Invalid data from file, expected dictionary and got:  developer
+
+2025-03-16 16:10:01,220 p=1758 u=hunter n=ansible WARNING| [WARNING]:  * Failed to parse /Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml with ini plugin: Invalid host pattern 'all:' supplied, ending in ':' is not allowed, this character is
+reserved to provide a port.
+
+2025-03-16 16:10:01,220 p=1758 u=hunter n=ansible WARNING| [WARNING]: Unable to parse /Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml as an inventory source
+
+2025-03-16 16:10:01,220 p=1758 u=hunter n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-16 16:10:01,221 p=1758 u=hunter n=ansible WARNING| [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-03-16 16:10:01,288 p=1758 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] ******************************************************************************************************************************************************************
+2025-03-16 16:10:01,288 p=1758 u=hunter n=ansible INFO| skipping: no hosts matched
+2025-03-16 16:10:01,288 p=1758 u=hunter n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************************************
+2025-03-16 16:10:20,986 p=1779 u=hunter n=ansible WARNING| [WARNING]: Skipping key (ansible_user) in group (all) as it is not a mapping, it is a <class 'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2025-03-16 16:10:20,986 p=1779 u=hunter n=ansible WARNING| [WARNING]: Skipping key (ansible_password) in group (all) as it is not a mapping, it is a <class 'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2025-03-16 16:10:20,986 p=1779 u=hunter n=ansible WARNING| [WARNING]: Skipping key (ansible_connection) in group (all) as it is not a mapping, it is a <class 'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2025-03-16 16:10:20,986 p=1779 u=hunter n=ansible WARNING| [WARNING]: Skipping key (ansible_become) in group (all) as it is not a mapping, it is a <class 'bool'>
+
+2025-03-16 16:10:20,986 p=1779 u=hunter n=ansible WARNING| [WARNING]: Skipping key (ansible_become_method) in group (all) as it is not a mapping, it is a <class 'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2025-03-16 16:10:21,090 p=1779 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] ******************************************************************************************************************************************************************
+2025-03-16 16:10:21,093 p=1779 u=hunter n=ansible INFO| TASK [Gathering Facts] *****************************************************************************************************************************************************************************************
+2025-03-16 16:10:22,491 p=1779 u=hunter n=ansible INFO| fatal: [switch1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: hunter@10.10.20.48: Permission denied (publickey,keyboard-interactive,password).", "unreachable": true}
+2025-03-16 16:10:22,493 p=1779 u=hunter n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************************************
+2025-03-16 16:10:22,493 p=1779 u=hunter n=ansible INFO| switch1                    : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2025-03-16 16:11:17,269 p=1806 u=hunter n=ansible WARNING| [WARNING]:  * Failed to parse /Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml with auto plugin: no root 'plugin' key found,
+'/Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml' is not a valid YAML inventory plugin config file
+
+2025-03-16 16:11:17,269 p=1806 u=hunter n=ansible WARNING| [WARNING]:  * Failed to parse /Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml with yaml plugin: Invalid data from file, expected dictionary and got:  developer
+
+2025-03-16 16:11:17,269 p=1806 u=hunter n=ansible WARNING| [WARNING]:  * Failed to parse /Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml with ini plugin: Invalid host pattern 'all:' supplied, ending in ':' is not allowed, this character is
+reserved to provide a port.
+
+2025-03-16 16:11:17,269 p=1806 u=hunter n=ansible WARNING| [WARNING]: Unable to parse /Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml as an inventory source
+
+2025-03-16 16:11:17,269 p=1806 u=hunter n=ansible WARNING| [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2025-03-16 16:11:17,270 p=1806 u=hunter n=ansible WARNING| [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-03-16 16:11:17,337 p=1806 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] ******************************************************************************************************************************************************************
+2025-03-16 16:11:17,337 p=1806 u=hunter n=ansible INFO| skipping: no hosts matched
+2025-03-16 16:11:17,337 p=1806 u=hunter n=ansible INFO| PLAY RECAP *****************************************************************************************************************************************************************************************************
+2025-03-16 16:12:16,506 p=1832 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] **********************************
+2025-03-16 16:12:16,510 p=1832 u=hunter n=ansible INFO| TASK [Gathering Facts] *********************************************************
+2025-03-16 16:12:17,476 p=1832 u=hunter n=ansible INFO| fatal: [switch1]: FAILED! => {"msg": "Unable to automatically determine host network os. Please manually configure ansible_network_os value for this host"}
+2025-03-16 16:12:17,476 p=1832 u=hunter n=ansible INFO| PLAY RECAP *********************************************************************
+2025-03-16 16:12:17,477 p=1832 u=hunter n=ansible INFO| switch1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-03-16 16:13:01,538 p=1858 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] **********************************
+2025-03-16 16:13:01,540 p=1858 u=hunter n=ansible INFO| TASK [Gathering Facts] *********************************************************
+2025-03-16 16:13:01,560 p=1858 u=hunter n=ansible INFO| fatal: [switch1]: FAILED! => {"msg": "network os cisco.ios is not supported"}
+2025-03-16 16:13:01,560 p=1858 u=hunter n=ansible INFO| PLAY RECAP *********************************************************************
+2025-03-16 16:13:01,560 p=1858 u=hunter n=ansible INFO| switch1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-03-16 16:14:39,290 p=1896 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] **********************************
+2025-03-16 16:14:39,294 p=1896 u=hunter n=ansible INFO| TASK [Gathering Facts] *********************************************************
+2025-03-16 16:14:39,866 p=1896 u=hunter n=ansible INFO| network_os is set to cisco.ios.ios
+2025-03-16 16:14:40,301 p=1901 u=hunter n=ansible INFO| [DEPRECATION WARNING]: The connection's stdin object is deprecated. Call 
+display.prompt_until(msg) instead. This feature will be removed in version 
+2.19. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-03-16 16:14:44,874 p=1896 u=hunter n=ansible INFO| ok: [switch1]
+2025-03-16 16:14:44,876 p=1896 u=hunter n=ansible INFO| TASK [Print ansible facts] *****************************************************
+2025-03-16 16:14:44,923 p=1896 u=hunter n=ansible INFO| ok: [switch1] => {
+    "ansible_facts": {
+        "net_api": "cliconf",
+        "net_gather_network_resources": [],
+        "net_gather_subset": [
+            "default"
+        ],
+        "net_hostname": "cat8000v",
+        "net_image": "bootflash:packages.conf",
+        "net_iostype": "IOS-XE",
+        "net_model": "C8000V",
+        "net_operatingmode": "autonomous",
+        "net_python_version": "3.13.2",
+        "net_serialnum": "9AT7NWBYW1A",
+        "net_system": "ios",
+        "net_version": "17.12.02",
+        "network_resources": {}
+    }
+}
+2025-03-16 16:14:44,924 p=1896 u=hunter n=ansible INFO| PLAY RECAP *********************************************************************
+2025-03-16 16:14:44,924 p=1896 u=hunter n=ansible INFO| switch1                    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-03-16 16:15:14,824 p=1901 u=hunter n=ansible INFO| persistent connection idle timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2025-03-16 16:15:14,932 p=1901 u=hunter n=ansible INFO| shutdown complete
+2025-03-16 16:24:01,325 p=2059 u=hunter n=ansible ERROR| ERROR! unexpected parameter type in action: <class 'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+The error appears to be in '/Users/hunter/Desktop/projects/cisco_devnet/ansible/playbook.yaml': line 10, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+    - name: A task to create a standard ACL
+      ^ here
+
+2025-03-16 16:24:25,806 p=2088 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] **********************************
+2025-03-16 16:24:25,809 p=2088 u=hunter n=ansible INFO| TASK [Gathering Facts] *********************************************************
+2025-03-16 16:24:26,043 p=2088 u=hunter n=ansible INFO| network_os is set to cisco.ios.ios
+2025-03-16 16:24:26,473 p=2093 u=hunter n=ansible INFO| [DEPRECATION WARNING]: The connection's stdin object is deprecated. Call 
+display.prompt_until(msg) instead. This feature will be removed in version 
+2.19. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-03-16 16:24:30,993 p=2088 u=hunter n=ansible INFO| ok: [switch1]
+2025-03-16 16:24:30,995 p=2088 u=hunter n=ansible INFO| TASK [Print ansible facts] *****************************************************
+2025-03-16 16:24:31,025 p=2088 u=hunter n=ansible INFO| ok: [switch1] => {
+    "ansible_facts": {
+        "net_api": "cliconf",
+        "net_gather_network_resources": [],
+        "net_gather_subset": [
+            "default"
+        ],
+        "net_hostname": "cat8000v",
+        "net_image": "bootflash:packages.conf",
+        "net_iostype": "IOS-XE",
+        "net_model": "C8000V",
+        "net_operatingmode": "autonomous",
+        "net_python_version": "3.13.2",
+        "net_serialnum": "9AT7NWBYW1A",
+        "net_system": "ios",
+        "net_version": "17.12.02",
+        "network_resources": {}
+    }
+}
+2025-03-16 16:24:31,026 p=2088 u=hunter n=ansible INFO| TASK [A task to create a standard ACL] *****************************************
+2025-03-16 16:24:31,333 p=2088 u=hunter n=ansible INFO| fatal: [switch1]: FAILED! => {"changed": false, "msg": "state is merged but all of the following are missing: config"}
+2025-03-16 16:24:31,334 p=2088 u=hunter n=ansible INFO| PLAY RECAP *********************************************************************
+2025-03-16 16:24:31,334 p=2088 u=hunter n=ansible INFO| switch1                    : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-03-16 16:24:31,435 p=2093 u=hunter n=ansible INFO| shutdown complete
+2025-03-16 16:24:48,461 p=2137 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] **********************************
+2025-03-16 16:24:48,463 p=2137 u=hunter n=ansible INFO| TASK [Gathering Facts] *********************************************************
+2025-03-16 16:24:48,678 p=2137 u=hunter n=ansible INFO| network_os is set to cisco.ios.ios
+2025-03-16 16:24:49,084 p=2142 u=hunter n=ansible INFO| [DEPRECATION WARNING]: The connection's stdin object is deprecated. Call 
+display.prompt_until(msg) instead. This feature will be removed in version 
+2.19. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-03-16 16:24:53,716 p=2137 u=hunter n=ansible INFO| ok: [switch1]
+2025-03-16 16:24:53,717 p=2137 u=hunter n=ansible INFO| TASK [Print ansible facts] *****************************************************
+2025-03-16 16:24:53,745 p=2137 u=hunter n=ansible INFO| ok: [switch1] => {
+    "ansible_facts": {
+        "net_api": "cliconf",
+        "net_gather_network_resources": [],
+        "net_gather_subset": [
+            "default"
+        ],
+        "net_hostname": "cat8000v",
+        "net_image": "bootflash:packages.conf",
+        "net_iostype": "IOS-XE",
+        "net_model": "C8000V",
+        "net_operatingmode": "autonomous",
+        "net_python_version": "3.13.2",
+        "net_serialnum": "9AT7NWBYW1A",
+        "net_system": "ios",
+        "net_version": "17.12.02",
+        "network_resources": {}
+    }
+}
+2025-03-16 16:24:53,746 p=2137 u=hunter n=ansible INFO| TASK [A task to create a standard ACL] *****************************************
+2025-03-16 16:24:54,047 p=2137 u=hunter n=ansible INFO| fatal: [switch1]: FAILED! => {"changed": false, "msg": "argument 'config' is of type <class 'dict'> and we were unable to convert to list: <class 'dict'> cannot be converted to a list"}
+2025-03-16 16:24:54,047 p=2137 u=hunter n=ansible INFO| PLAY RECAP *********************************************************************
+2025-03-16 16:24:54,047 p=2137 u=hunter n=ansible INFO| switch1                    : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-03-16 16:24:54,148 p=2142 u=hunter n=ansible INFO| shutdown complete
+2025-03-16 16:25:59,193 p=2191 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] **********************************
+2025-03-16 16:25:59,196 p=2191 u=hunter n=ansible INFO| TASK [Gathering Facts] *********************************************************
+2025-03-16 16:25:59,420 p=2191 u=hunter n=ansible INFO| network_os is set to cisco.ios.ios
+2025-03-16 16:25:59,834 p=2196 u=hunter n=ansible INFO| [DEPRECATION WARNING]: The connection's stdin object is deprecated. Call 
+display.prompt_until(msg) instead. This feature will be removed in version 
+2.19. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-03-16 16:26:04,350 p=2191 u=hunter n=ansible INFO| ok: [switch1]
+2025-03-16 16:26:04,351 p=2191 u=hunter n=ansible INFO| TASK [Print ansible facts] *****************************************************
+2025-03-16 16:26:04,379 p=2191 u=hunter n=ansible INFO| ok: [switch1] => {
+    "ansible_facts": {
+        "net_api": "cliconf",
+        "net_gather_network_resources": [],
+        "net_gather_subset": [
+            "default"
+        ],
+        "net_hostname": "cat8000v",
+        "net_image": "bootflash:packages.conf",
+        "net_iostype": "IOS-XE",
+        "net_model": "C8000V",
+        "net_operatingmode": "autonomous",
+        "net_python_version": "3.13.2",
+        "net_serialnum": "9AT7NWBYW1A",
+        "net_system": "ios",
+        "net_version": "17.12.02",
+        "network_resources": {}
+    }
+}
+2025-03-16 16:26:04,379 p=2191 u=hunter n=ansible INFO| TASK [A task to create a standard ACL] *****************************************
+2025-03-16 16:26:10,781 p=2191 u=hunter n=ansible INFO| changed: [switch1]
+2025-03-16 16:26:10,782 p=2191 u=hunter n=ansible INFO| PLAY RECAP *********************************************************************
+2025-03-16 16:26:10,782 p=2191 u=hunter n=ansible INFO| switch1                    : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-03-16 16:26:10,883 p=2196 u=hunter n=ansible INFO| shutdown complete
+2025-03-16 16:27:56,036 p=2290 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] ***********************************************
+2025-03-16 16:27:56,038 p=2290 u=hunter n=ansible INFO| TASK [Gathering Facts] **********************************************************************
+2025-03-16 16:27:56,252 p=2290 u=hunter n=ansible INFO| network_os is set to cisco.ios.ios
+2025-03-16 16:27:56,672 p=2295 u=hunter n=ansible INFO| [DEPRECATION WARNING]: The connection's stdin object is deprecated. Call 
+display.prompt_until(msg) instead. This feature will be removed in version 
+2.19. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-03-16 16:28:01,245 p=2290 u=hunter n=ansible INFO| ok: [switch1]
+2025-03-16 16:28:01,246 p=2290 u=hunter n=ansible INFO| TASK [Print ansible facts] ******************************************************************
+2025-03-16 16:28:01,275 p=2290 u=hunter n=ansible INFO| ok: [switch1] => {
+    "ansible_facts": {
+        "net_api": "cliconf",
+        "net_gather_network_resources": [],
+        "net_gather_subset": [
+            "default"
+        ],
+        "net_hostname": "cat8000v",
+        "net_image": "bootflash:packages.conf",
+        "net_iostype": "IOS-XE",
+        "net_model": "C8000V",
+        "net_operatingmode": "autonomous",
+        "net_python_version": "3.13.2",
+        "net_serialnum": "9AT7NWBYW1A",
+        "net_system": "ios",
+        "net_version": "17.12.02",
+        "network_resources": {}
+    }
+}
+2025-03-16 16:28:01,276 p=2290 u=hunter n=ansible INFO| TASK [A task to create a standard ACL] ******************************************************
+2025-03-16 16:28:01,578 p=2290 u=hunter n=ansible INFO| fatal: [switch1]: FAILED! => {"changed": false, "msg": "dictionary requested, could not parse JSON or key=value"}
+2025-03-16 16:28:01,579 p=2290 u=hunter n=ansible INFO| PLAY RECAP **********************************************************************************
+2025-03-16 16:28:01,579 p=2290 u=hunter n=ansible INFO| switch1                    : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-03-16 16:28:01,680 p=2295 u=hunter n=ansible INFO| shutdown complete
+2025-03-16 16:28:21,896 p=2339 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] ***********************************************
+2025-03-16 16:28:21,906 p=2339 u=hunter n=ansible INFO| TASK [Gathering Facts] **********************************************************************
+2025-03-16 16:28:22,127 p=2339 u=hunter n=ansible INFO| network_os is set to cisco.ios.ios
+2025-03-16 16:28:22,535 p=2344 u=hunter n=ansible INFO| [DEPRECATION WARNING]: The connection's stdin object is deprecated. Call 
+display.prompt_until(msg) instead. This feature will be removed in version 
+2.19. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-03-16 16:28:28,162 p=2339 u=hunter n=ansible INFO| ok: [switch1]
+2025-03-16 16:28:28,163 p=2339 u=hunter n=ansible INFO| TASK [A task to create a standard ACL] ******************************************************
+2025-03-16 16:28:28,486 p=2339 u=hunter n=ansible INFO| fatal: [switch1]: FAILED! => {"changed": false, "msg": "Unsupported parameters for (cisco.ios.ios_acls) module: config.acls.aces.deny. Supported parameters include: destination, dscp, enable_fragments, evaluate, grant, log, log_input, option, precedence, protocol, protocol_options, remarks, sequence, source, time_range, tos, ttl."}
+2025-03-16 16:28:28,486 p=2339 u=hunter n=ansible INFO| PLAY RECAP **********************************************************************************
+2025-03-16 16:28:28,486 p=2339 u=hunter n=ansible INFO| switch1                    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-03-16 16:28:28,587 p=2344 u=hunter n=ansible INFO| shutdown complete
+2025-03-16 16:30:01,062 p=2428 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] **********************************
+2025-03-16 16:30:01,078 p=2428 u=hunter n=ansible INFO| TASK [A task to create a standard ACL] *****************************************
+2025-03-16 16:30:01,311 p=2428 u=hunter n=ansible INFO| network_os is set to cisco.ios.ios
+2025-03-16 16:30:01,429 p=2428 u=hunter n=ansible INFO| fatal: [switch1]: FAILED! => {"changed": false, "msg": "Unsupported parameters for (cisco.ios.ios_acls) module: config.acls.aces.deny. Supported parameters include: destination, dscp, enable_fragments, evaluate, grant, log, log_input, option, precedence, protocol, protocol_options, remarks, sequence, source, time_range, tos, ttl."}
+2025-03-16 16:30:01,430 p=2428 u=hunter n=ansible INFO| PLAY RECAP *********************************************************************
+2025-03-16 16:30:01,430 p=2428 u=hunter n=ansible INFO| switch1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-03-16 16:30:01,531 p=2433 u=hunter n=ansible INFO| shutdown complete
+2025-03-16 16:30:23,409 p=2460 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] ***********************************************
+2025-03-16 16:30:23,431 p=2460 u=hunter n=ansible INFO| TASK [A task to create a standard ACL] ******************************************************
+2025-03-16 16:30:23,674 p=2460 u=hunter n=ansible INFO| network_os is set to cisco.ios.ios
+2025-03-16 16:30:23,791 p=2465 u=hunter n=ansible INFO| [DEPRECATION WARNING]: The connection's stdin object is deprecated. Call 
+display.prompt_until(msg) instead. This feature will be removed in version 
+2.19. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-03-16 16:30:34,163 p=2460 u=hunter n=ansible INFO| changed: [switch1]
+2025-03-16 16:30:34,164 p=2460 u=hunter n=ansible INFO| PLAY RECAP **********************************************************************************
+2025-03-16 16:30:34,164 p=2460 u=hunter n=ansible INFO| switch1                    : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-03-16 16:30:34,265 p=2465 u=hunter n=ansible INFO| shutdown complete
+2025-03-16 16:31:35,216 p=2505 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] ***********************************************
+2025-03-16 16:31:35,226 p=2505 u=hunter n=ansible INFO| TASK [A task to create a standard ACL] ******************************************************
+2025-03-16 16:31:35,446 p=2505 u=hunter n=ansible INFO| network_os is set to cisco.ios.ios
+2025-03-16 16:31:35,553 p=2510 u=hunter n=ansible INFO| [DEPRECATION WARNING]: The connection's stdin object is deprecated. Call 
+display.prompt_until(msg) instead. This feature will be removed in version 
+2.19. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-03-16 16:31:42,957 p=2505 u=hunter n=ansible INFO| fatal: [switch1]: FAILED! => {"changed": false, "module_stderr": "permit 10.0.0.0 0.0.0.255\r\npermit 10.0.0.0 0.0.0.255\r\n         ^\r\n% Invalid input detected at '^' marker.\r\n\r\ncat8000v(config-ext-nacl)#", "module_stdout": "", "msg": "MODULE FAILURE: No start of json char found\nSee stdout/stderr for the exact error"}
+2025-03-16 16:31:42,958 p=2505 u=hunter n=ansible INFO| PLAY RECAP **********************************************************************************
+2025-03-16 16:31:42,958 p=2505 u=hunter n=ansible INFO| switch1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-03-16 16:31:43,059 p=2510 u=hunter n=ansible INFO| shutdown complete
+2025-03-16 16:32:35,377 p=2546 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] **********************************
+2025-03-16 16:32:35,394 p=2546 u=hunter n=ansible INFO| TASK [A task to create a standard ACL] *****************************************
+2025-03-16 16:32:35,630 p=2546 u=hunter n=ansible INFO| network_os is set to cisco.ios.ios
+2025-03-16 16:32:35,746 p=2551 u=hunter n=ansible INFO| [DEPRECATION WARNING]: The connection's stdin object is deprecated. Call 
+display.prompt_until(msg) instead. This feature will be removed in version 
+2.19. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-03-16 16:32:47,385 p=2546 u=hunter n=ansible INFO| changed: [switch1]
+2025-03-16 16:32:47,386 p=2546 u=hunter n=ansible INFO| PLAY RECAP *********************************************************************
+2025-03-16 16:32:47,386 p=2546 u=hunter n=ansible INFO| switch1                    : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-03-16 16:32:47,487 p=2551 u=hunter n=ansible INFO| shutdown complete
+2025-03-16 16:47:27,734 p=2678 u=hunter n=ansible ERROR| ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context. mapping values are not allowed in this context
+  in "<unicode string>", line 36, column 23
+
+The error appears to be in '/Users/hunter/Desktop/projects/cisco_devnet/ansible/playbook.yaml': line 36, column 23, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+                acl_type: extended
+                  aces:
+                      ^ here
+
+2025-03-16 16:47:57,344 p=2703 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] ***********************************************
+2025-03-16 16:47:57,376 p=2703 u=hunter n=ansible INFO| TASK [A task to create a standard ACL] ******************************************************
+2025-03-16 16:47:57,630 p=2703 u=hunter n=ansible INFO| network_os is set to cisco.ios.ios
+2025-03-16 16:47:57,754 p=2708 u=hunter n=ansible INFO| [DEPRECATION WARNING]: The connection's stdin object is deprecated. Call 
+display.prompt_until(msg) instead. This feature will be removed in version 
+2.19. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-03-16 16:48:07,772 p=2703 u=hunter n=ansible INFO| changed: [switch1]
+2025-03-16 16:48:07,772 p=2703 u=hunter n=ansible INFO| TASK [A task to create an extended ACL] *****************************************************
+2025-03-16 16:48:14,172 p=2703 u=hunter n=ansible INFO| fatal: [switch1]: FAILED! => {"changed": false, "module_stderr": "permit 10.0.0.0 0.0.0.255 10.10.10.0 0.0.0.255 log\r\npermit 10.0.0.0 0.0.0.255 10.10.10.0 0.0.0.255 log\r\n         ^\r\n% Invalid input detected at '^' marker.\r\n\r\ncat8000v(config-ext-nacl)#", "module_stdout": "", "msg": "MODULE FAILURE: No start of json char found\nSee stdout/stderr for the exact error"}
+2025-03-16 16:48:14,174 p=2703 u=hunter n=ansible INFO| PLAY RECAP **********************************************************************************
+2025-03-16 16:48:14,174 p=2703 u=hunter n=ansible INFO| switch1                    : ok=1    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-03-16 16:48:14,275 p=2708 u=hunter n=ansible INFO| shutdown complete
+2025-03-16 16:53:49,484 p=2829 u=hunter n=ansible ERROR| ERROR! 'cisco.ios.ios_acls' is not a valid attribute for a Block
+
+The error appears to be in '/Users/hunter/Desktop/projects/cisco_devnet/ansible/playbook.yaml': line 29, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+    - name: A task to create an extended ACL
+      ^ here
+
+2025-03-16 16:55:55,071 p=2871 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] **********************************
+2025-03-16 16:55:55,097 p=2871 u=hunter n=ansible INFO| TASK [A task to create an extended ACL] ****************************************
+2025-03-16 16:55:55,344 p=2871 u=hunter n=ansible INFO| network_os is set to cisco.ios.ios
+2025-03-16 16:55:55,465 p=2877 u=hunter n=ansible INFO| [DEPRECATION WARNING]: The connection's stdin object is deprecated. Call 
+display.prompt_until(msg) instead. This feature will be removed in version 
+2.19. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-03-16 16:56:01,475 p=2871 u=hunter n=ansible INFO| fatal: [switch1]: FAILED! => {"changed": false, "module_stderr": "permit 10.0.0.0 0.0.0.255 10.10.10.0 0.0.0.255 log\r\npermit 10.0.0.0 0.0.0.255 10.10.10.0 0.0.0.255 log\r\n         ^\r\n% Invalid input detected at '^' marker.\r\n\r\ncat8000v(config-ext-nacl)#", "module_stdout": "", "msg": "MODULE FAILURE: No start of json char found\nSee stdout/stderr for the exact error"}
+2025-03-16 16:56:01,477 p=2871 u=hunter n=ansible INFO| TASK [Remove incomplete ACL] ***************************************************
+2025-03-16 16:56:03,667 p=2871 u=hunter n=ansible WARNING| [WARNING]: To ensure idempotency and correct diff the input configuration lines
+should be similar to how they appear if present in the running configuration on
+device
+
+2025-03-16 16:56:03,667 p=2871 u=hunter n=ansible INFO| changed: [switch1]
+2025-03-16 16:56:03,670 p=2871 u=hunter n=ansible INFO| PLAY RECAP *********************************************************************
+2025-03-16 16:56:03,670 p=2871 u=hunter n=ansible INFO| switch1                    : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=1    ignored=0   
+2025-03-16 16:56:03,770 p=2877 u=hunter n=ansible INFO| shutdown complete
+2025-03-16 17:07:27,072 p=2996 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] ***********************************************
+2025-03-16 17:07:27,095 p=2996 u=hunter n=ansible INFO| TASK [A task to create an extended ACL] *****************************************************
+2025-03-16 17:07:27,343 p=2996 u=hunter n=ansible INFO| network_os is set to cisco.ios.ios
+2025-03-16 17:07:27,462 p=3001 u=hunter n=ansible INFO| [DEPRECATION WARNING]: The connection's stdin object is deprecated. Call 
+display.prompt_until(msg) instead. This feature will be removed in version 
+2.19. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-03-16 17:07:33,513 p=2996 u=hunter n=ansible INFO| fatal: [switch1]: FAILED! => {"changed": false, "module_stderr": "permit 10.0.0.0 0.0.0.255 10.10.10.0 0.0.0.255 log\r\npermit 10.0.0.0 0.0.0.255 10.10.10.0 0.0.0.255 log\r\n         ^\r\n% Invalid input detected at '^' marker.\r\n\r\ncat8000v(config-ext-nacl)#", "module_stdout": "", "msg": "MODULE FAILURE: No start of json char found\nSee stdout/stderr for the exact error"}
+2025-03-16 17:07:33,515 p=2996 u=hunter n=ansible INFO| TASK [Remove incomplete ACL] ****************************************************************
+2025-03-16 17:07:35,968 p=2996 u=hunter n=ansible WARNING| [WARNING]: To ensure idempotency and correct diff the input configuration lines should be
+similar to how they appear if present in the running configuration on device
+
+2025-03-16 17:07:35,968 p=2996 u=hunter n=ansible INFO| changed: [switch1]
+2025-03-16 17:07:35,971 p=2996 u=hunter n=ansible INFO| PLAY RECAP **********************************************************************************
+2025-03-16 17:07:35,971 p=2996 u=hunter n=ansible INFO| switch1                    : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=1    ignored=0   
+2025-03-16 17:07:36,071 p=3001 u=hunter n=ansible INFO| shutdown complete
+2025-03-16 17:10:22,609 p=3048 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] **********************************
+2025-03-16 17:10:22,625 p=3048 u=hunter n=ansible INFO| TASK [A task to create an extended ACL] ****************************************
+2025-03-16 17:10:22,875 p=3048 u=hunter n=ansible INFO| network_os is set to cisco.ios.ios
+2025-03-16 17:10:22,994 p=3053 u=hunter n=ansible INFO| [DEPRECATION WARNING]: The connection's stdin object is deprecated. Call 
+display.prompt_until(msg) instead. This feature will be removed in version 
+2.19. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-03-16 17:10:29,043 p=3048 u=hunter n=ansible INFO| fatal: [switch1]: FAILED! => {"changed": false, "module_stderr": "permit 10.0.0.0 0.0.0.255 10.10.10.0 0.0.0.255\r\npermit 10.0.0.0 0.0.0.255 10.10.10.0 0.0.0.255\r\n         ^\r\n% Invalid input detected at '^' marker.\r\n\r\ncat8000v(config-ext-nacl)#", "module_stdout": "", "msg": "MODULE FAILURE: No start of json char found\nSee stdout/stderr for the exact error"}
+2025-03-16 17:10:29,045 p=3048 u=hunter n=ansible INFO| TASK [Remove incomplete ACL] ***************************************************
+2025-03-16 17:10:31,212 p=3048 u=hunter n=ansible WARNING| [WARNING]: To ensure idempotency and correct diff the input configuration lines
+should be similar to how they appear if present in the running configuration on
+device
+
+2025-03-16 17:10:31,213 p=3048 u=hunter n=ansible INFO| changed: [switch1]
+2025-03-16 17:10:31,215 p=3048 u=hunter n=ansible INFO| PLAY RECAP *********************************************************************
+2025-03-16 17:10:31,215 p=3048 u=hunter n=ansible INFO| switch1                    : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=1    ignored=0   
+2025-03-16 17:10:31,316 p=3053 u=hunter n=ansible INFO| shutdown complete
+2025-03-16 17:12:20,936 p=3106 u=hunter n=ansible INFO| ansible-playbook [core 2.18.3]
+  config file = /Users/hunter/Desktop/projects/cisco_devnet/ansible/ansible.cfg
+  configured module search path = ['/Users/hunter/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /opt/homebrew/Cellar/ansible/11.3.0_1/libexec/lib/python3.13/site-packages/ansible
+  ansible collection location = /Users/hunter/.ansible/collections:/usr/share/ansible/collections
+  executable location = /opt/homebrew/bin/ansible-playbook
+  python version = 3.13.2 (main, Feb  4 2025, 14:51:09) [Clang 16.0.0 (clang-1600.0.26.6)] (/opt/homebrew/Cellar/ansible/11.3.0_1/libexec/bin/python)
+  jinja version = 3.1.6
+  libyaml = True
+2025-03-16 17:12:20,936 p=3106 u=hunter n=ansible INFO| Using /Users/hunter/Desktop/projects/cisco_devnet/ansible/ansible.cfg as config file
+2025-03-16 17:12:20,937 p=3106 u=hunter n=ansible INFO| setting up inventory plugins
+2025-03-16 17:12:20,970 p=3106 u=hunter n=ansible INFO| Loading collection ansible.builtin from 
+2025-03-16 17:12:20,976 p=3106 u=hunter n=ansible INFO| host_list declined parsing /Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml as it did not pass its verify_file() method
+2025-03-16 17:12:20,976 p=3106 u=hunter n=ansible INFO| script declined parsing /Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml as it did not pass its verify_file() method
+2025-03-16 17:12:20,978 p=3106 u=hunter n=ansible INFO| Parsed /Users/hunter/Desktop/projects/cisco_devnet/ansible/inventory.yaml inventory source with yaml plugin
+2025-03-16 17:12:21,061 p=3106 u=hunter n=ansible INFO| Loading collection cisco.ios from /opt/homebrew/Cellar/ansible/11.3.0_1/libexec/lib/python3.13/site-packages/ansible_collections/cisco/ios
+2025-03-16 17:12:21,062 p=3106 u=hunter n=ansible INFO| Loading callback plugin default of type stdout, v2.0 from /opt/homebrew/Cellar/ansible/11.3.0_1/libexec/lib/python3.13/site-packages/ansible/plugins/callback/default.py
+2025-03-16 17:12:21,067 p=3106 u=hunter n=ansible INFO| Skipping callback 'default', as we already have a stdout callback.
+2025-03-16 17:12:21,067 p=3106 u=hunter n=ansible INFO| Skipping callback 'minimal', as we already have a stdout callback.
+2025-03-16 17:12:21,067 p=3106 u=hunter n=ansible INFO| Skipping callback 'oneline', as we already have a stdout callback.
+2025-03-16 17:12:21,067 p=3106 u=hunter n=ansible INFO| PLAYBOOK: playbook.yaml *********************************************************************
+2025-03-16 17:12:21,067 p=3106 u=hunter n=ansible INFO| 1 plays in playbook.yaml
+2025-03-16 17:12:21,067 p=3106 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] ***********************************************
+2025-03-16 17:12:21,083 p=3106 u=hunter n=ansible INFO| TASK [A task to create an extended ACL] *****************************************************
+2025-03-16 17:12:21,083 p=3106 u=hunter n=ansible INFO| task path: /Users/hunter/Desktop/projects/cisco_devnet/ansible/playbook.yaml:30
+2025-03-16 17:12:21,087 p=3106 u=hunter n=ansible INFO| redirecting (type: connection) ansible.builtin.network_cli to ansible.netcommon.network_cli
+2025-03-16 17:12:21,088 p=3106 u=hunter n=ansible INFO| Loading collection ansible.netcommon from /opt/homebrew/Cellar/ansible/11.3.0_1/libexec/lib/python3.13/site-packages/ansible_collections/ansible/netcommon
+2025-03-16 17:12:21,102 p=3106 u=hunter n=ansible INFO| Loading collection ansible.utils from /opt/homebrew/Cellar/ansible/11.3.0_1/libexec/lib/python3.13/site-packages/ansible_collections/ansible/utils
+2025-03-16 17:12:21,111 p=3106 u=hunter n=ansible INFO| redirecting (type: become) ansible.builtin.enable to ansible.netcommon.enable
+2025-03-16 17:12:21,114 p=3106 u=hunter n=ansible INFO| <10.10.20.48> Using network group action cisco.ios.ios for cisco.ios.ios_acls
+2025-03-16 17:12:21,117 p=3106 u=hunter n=ansible INFO| <10.10.20.48> attempting to start connection
+2025-03-16 17:12:21,117 p=3106 u=hunter n=ansible INFO| <10.10.20.48> using connection plugin ansible.netcommon.network_cli
+2025-03-16 17:12:21,262 p=3108 u=hunter n=ansible INFO| Loading collection ansible.builtin from 
+2025-03-16 17:12:21,279 p=3111 u=hunter n=ansible INFO| redirecting (type: connection) ansible.builtin.network_cli to ansible.netcommon.network_cli
+2025-03-16 17:12:21,280 p=3111 u=hunter n=ansible INFO| Loading collection ansible.netcommon from /opt/homebrew/Cellar/ansible/11.3.0_1/libexec/lib/python3.13/site-packages/ansible_collections/ansible/netcommon
+2025-03-16 17:12:21,289 p=3111 u=hunter n=ansible INFO| Loading collection ansible.utils from /opt/homebrew/Cellar/ansible/11.3.0_1/libexec/lib/python3.13/site-packages/ansible_collections/ansible/utils
+2025-03-16 17:12:21,294 p=3111 u=hunter n=ansible INFO| Loading collection cisco.ios from /opt/homebrew/Cellar/ansible/11.3.0_1/libexec/lib/python3.13/site-packages/ansible_collections/cisco/ios
+2025-03-16 17:12:21,320 p=3106 u=hunter n=ansible INFO| <10.10.20.48> local domain socket does not exist, starting it
+2025-03-16 17:12:21,320 p=3106 u=hunter n=ansible INFO| <10.10.20.48> control socket path is /Users/hunter/.ansible/pc/f8de407a37
+2025-03-16 17:12:21,320 p=3106 u=hunter n=ansible INFO| <10.10.20.48> Loading collection ansible.builtin from 
+2025-03-16 17:12:21,320 p=3106 u=hunter n=ansible INFO| <10.10.20.48> redirecting (type: connection) ansible.builtin.network_cli to ansible.netcommon.network_cli
+2025-03-16 17:12:21,320 p=3106 u=hunter n=ansible INFO| <10.10.20.48> Loading collection ansible.netcommon from /opt/homebrew/Cellar/ansible/11.3.0_1/libexec/lib/python3.13/site-packages/ansible_collections/ansible/netcommon
+2025-03-16 17:12:21,320 p=3106 u=hunter n=ansible INFO| <10.10.20.48> Loading collection ansible.utils from /opt/homebrew/Cellar/ansible/11.3.0_1/libexec/lib/python3.13/site-packages/ansible_collections/ansible/utils
+2025-03-16 17:12:21,320 p=3106 u=hunter n=ansible INFO| <10.10.20.48> Loading collection cisco.ios from /opt/homebrew/Cellar/ansible/11.3.0_1/libexec/lib/python3.13/site-packages/ansible_collections/cisco/ios
+2025-03-16 17:12:21,320 p=3106 u=hunter n=ansible INFO| <10.10.20.48> local domain socket listeners started successfully
+2025-03-16 17:12:21,320 p=3106 u=hunter n=ansible INFO| <10.10.20.48> loaded cliconf plugin ansible_collections.cisco.ios.plugins.cliconf.ios from path /opt/homebrew/Cellar/ansible/11.3.0_1/libexec/lib/python3.13/site-packages/ansible_collections/cisco/ios/plugins/cliconf/ios.py for network_os cisco.ios.ios
+2025-03-16 17:12:21,320 p=3106 u=hunter n=ansible INFO| network_os is set to cisco.ios.ios
+2025-03-16 17:12:21,320 p=3106 u=hunter n=ansible INFO| <10.10.20.48> ssh type is set to auto
+2025-03-16 17:12:21,320 p=3106 u=hunter n=ansible INFO| <10.10.20.48> autodetecting ssh_type
+2025-03-16 17:12:21,320 p=3106 u=hunter n=ansible INFO| <10.10.20.48> ssh type is now set to libssh
+2025-03-16 17:12:21,320 p=3106 u=hunter n=ansible INFO| <10.10.20.48> Loading collection ansible.builtin from 
+
+2025-03-16 17:12:21,320 p=3106 u=hunter n=ansible INFO| <10.10.20.48> local domain socket path is /Users/hunter/.ansible/pc/f8de407a37
+2025-03-16 17:12:21,320 p=3106 u=hunter n=ansible INFO| <10.10.20.48> ANSIBLE_NETWORK_IMPORT_MODULES: enabled
+2025-03-16 17:12:21,437 p=3106 u=hunter n=ansible INFO| <10.10.20.48> ANSIBLE_NETWORK_IMPORT_MODULES: found cisco.ios.ios_acls  at /opt/homebrew/Cellar/ansible/11.3.0_1/libexec/lib/python3.13/site-packages/ansible_collections/cisco/ios/plugins/modules/ios_acls.py
+2025-03-16 17:12:21,437 p=3106 u=hunter n=ansible INFO| <10.10.20.48> ANSIBLE_NETWORK_IMPORT_MODULES: running cisco.ios.ios_acls
+2025-03-16 17:12:21,439 p=3111 u=hunter n=ansible INFO| <10.10.20.48> USING PYLIBSSH VERSION 1.2.2
+2025-03-16 17:12:21,439 p=3111 u=hunter n=ansible INFO| <10.10.20.48> ESTABLISH LIBSSH CONNECTION FOR USER: developer on PORT 22 TO 10.10.20.48
+2025-03-16 17:12:21,439 p=3111 u=hunter n=ansible INFO| [DEPRECATION WARNING]: The connection's stdin object is deprecated. Call 
+display.prompt_until(msg) instead. This feature will be removed in version 
+2.19. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-03-16 17:12:22,981 p=3111 u=hunter n=ansible INFO| ssh connection is OK: <pylibsshext.session.Session object at 0x104be8180>
+2025-03-16 17:12:27,804 p=3111 u=hunter n=ansible INFO| Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/ansible/11.3.0_1/libexec/lib/python3.13/site-packages/ansible/utils/jsonrpc.py", line 45, in handle_request
+    result = rpc_method(*args, **kwargs)
+  File "/opt/homebrew/Cellar/ansible/11.3.0_1/libexec/lib/python3.13/site-packages/ansible_collections/ansible/netcommon/plugins/plugin_utils/cliconf_base.py", line 38, in wrapped
+    return func(self, *args, **kwargs)
+  File "/opt/homebrew/Cellar/ansible/11.3.0_1/libexec/lib/python3.13/site-packages/ansible_collections/cisco/ios/plugins/cliconf/ios.py", line 337, in edit_config
+    results.append(self.send_command(**line))
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/opt/homebrew/Cellar/ansible/11.3.0_1/libexec/lib/python3.13/site-packages/ansible_collections/ansible/netcommon/plugins/plugin_utils/cliconf_base.py", line 148, in send_command
+    resp = self._connection.send(**kwargs)
+  File "/opt/homebrew/Cellar/ansible/11.3.0_1/libexec/lib/python3.13/site-packages/ansible_collections/ansible/netcommon/plugins/connection/network_cli.py", line 345, in wrapped
+    return func(self, *args, **kwargs)
+  File "/opt/homebrew/Cellar/ansible/11.3.0_1/libexec/lib/python3.13/site-packages/ansible_collections/ansible/netcommon/plugins/connection/network_cli.py", line 1005, in send
+    response = self.receive(
+        command,
+    ...<5 lines>...
+        strip_prompt,
+    )
+  File "/opt/homebrew/Cellar/ansible/11.3.0_1/libexec/lib/python3.13/site-packages/ansible_collections/ansible/netcommon/plugins/connection/network_cli.py", line 946, in receive
+    response = self.receive_libssh(
+        command,
+    ...<5 lines>...
+        strip_prompt,
+    )
+  File "/opt/homebrew/Cellar/ansible/11.3.0_1/libexec/lib/python3.13/site-packages/ansible_collections/ansible/netcommon/plugins/connection/network_cli.py", line 911, in receive_libssh
+    raise AnsibleConnectionFailure(errored_response)
+ansible.errors.AnsibleConnectionFailure: permit 10.0.0.0 0.0.0.255 10.10.10.0 0.0.0.255
+permit 10.0.0.0 0.0.0.255 10.10.10.0 0.0.0.255
+         ^
+% Invalid input detected at '^' marker.
+
+cat8000v(config-ext-nacl)#
+
+2025-03-16 17:12:27,806 p=3106 u=hunter n=ansible INFO| <10.10.20.48> ANSIBLE_NETWORK_IMPORT_MODULES: complete
+2025-03-16 17:12:27,813 p=3106 u=hunter n=ansible INFO| fatal: [switch1]: FAILED! => {
+    "changed": false,
+    "module_stderr": "permit 10.0.0.0 0.0.0.255 10.10.10.0 0.0.0.255\r\npermit 10.0.0.0 0.0.0.255 10.10.10.0 0.0.0.255\r\n         ^\r\n% Invalid input detected at '^' marker.\r\n\r\ncat8000v(config-ext-nacl)#",
+    "module_stdout": "",
+    "msg": "MODULE FAILURE: No start of json char found\nSee stdout/stderr for the exact error"
+}
+2025-03-16 17:12:27,815 p=3106 u=hunter n=ansible INFO| TASK [Remove incomplete ACL] ****************************************************************
+2025-03-16 17:12:27,816 p=3106 u=hunter n=ansible INFO| task path: /Users/hunter/Desktop/projects/cisco_devnet/ansible/playbook.yaml:47
+2025-03-16 17:12:27,825 p=3106 u=hunter n=ansible INFO| redirecting (type: connection) ansible.builtin.network_cli to ansible.netcommon.network_cli
+2025-03-16 17:12:27,826 p=3106 u=hunter n=ansible INFO| Loading collection ansible.netcommon from /opt/homebrew/Cellar/ansible/11.3.0_1/libexec/lib/python3.13/site-packages/ansible_collections/ansible/netcommon
+2025-03-16 17:12:27,842 p=3106 u=hunter n=ansible INFO| Loading collection ansible.utils from /opt/homebrew/Cellar/ansible/11.3.0_1/libexec/lib/python3.13/site-packages/ansible_collections/ansible/utils
+2025-03-16 17:12:27,853 p=3106 u=hunter n=ansible INFO| redirecting (type: become) ansible.builtin.enable to ansible.netcommon.enable
+2025-03-16 17:12:27,858 p=3106 u=hunter n=ansible INFO| <10.10.20.48> Using network group action cisco.ios.ios for cisco.ios.ios_config
+2025-03-16 17:12:27,860 p=3106 u=hunter n=ansible INFO| <10.10.20.48> attempting to start connection
+2025-03-16 17:12:27,861 p=3106 u=hunter n=ansible INFO| <10.10.20.48> using connection plugin ansible.netcommon.network_cli
+2025-03-16 17:12:28,006 p=3118 u=hunter n=ansible INFO| Loading collection ansible.builtin from 
+2025-03-16 17:12:28,037 p=3106 u=hunter n=ansible INFO| <10.10.20.48> found existing local domain socket, using it!
+2025-03-16 17:12:28,037 p=3106 u=hunter n=ansible INFO| <10.10.20.48> invoked shell using ssh_type: libssh
+2025-03-16 17:12:28,037 p=3106 u=hunter n=ansible INFO| <10.10.20.48> ssh connection done, setting terminal
+2025-03-16 17:12:28,037 p=3106 u=hunter n=ansible INFO| <10.10.20.48> loaded terminal plugin for network_os cisco.ios.ios
+2025-03-16 17:12:28,037 p=3106 u=hunter n=ansible INFO| <10.10.20.48> firing event: on_become
+2025-03-16 17:12:28,037 p=3106 u=hunter n=ansible INFO| <10.10.20.48> firing event: on_open_shell()
+2025-03-16 17:12:28,037 p=3106 u=hunter n=ansible INFO| <10.10.20.48> ssh connection has completed successfully
+2025-03-16 17:12:28,037 p=3106 u=hunter n=ansible INFO| <10.10.20.48> updating play_context for connection
+2025-03-16 17:12:28,037 p=3106 u=hunter n=ansible INFO| <10.10.20.48> Loading collection ansible.builtin from 
+
+2025-03-16 17:12:28,037 p=3106 u=hunter n=ansible INFO| <10.10.20.48> local domain socket path is /Users/hunter/.ansible/pc/f8de407a37
+2025-03-16 17:12:28,037 p=3106 u=hunter n=ansible INFO| <10.10.20.48> ANSIBLE_NETWORK_IMPORT_MODULES: enabled
+2025-03-16 17:12:28,040 p=3106 u=hunter n=ansible INFO| <10.10.20.48> ANSIBLE_NETWORK_IMPORT_MODULES: found cisco.ios.ios_config  at /opt/homebrew/Cellar/ansible/11.3.0_1/libexec/lib/python3.13/site-packages/ansible_collections/cisco/ios/plugins/modules/ios_config.py
+2025-03-16 17:12:28,040 p=3106 u=hunter n=ansible INFO| <10.10.20.48> ANSIBLE_NETWORK_IMPORT_MODULES: running cisco.ios.ios_config
+2025-03-16 17:12:30,399 p=3106 u=hunter n=ansible INFO| <10.10.20.48> ANSIBLE_NETWORK_IMPORT_MODULES: complete
+2025-03-16 17:12:30,403 p=3106 u=hunter n=ansible WARNING| [WARNING]: To ensure idempotency and correct diff the input configuration lines should be
+similar to how they appear if present in the running configuration on device
+
+2025-03-16 17:12:30,404 p=3106 u=hunter n=ansible INFO| changed: [switch1] => {
+    "banners": {},
+    "changed": true,
+    "commands": [
+        "no ip access-list extended TEST_EXTENDED"
+    ],
+    "invocation": {
+        "module_args": {
+            "after": null,
+            "backup": false,
+            "backup_options": null,
+            "before": null,
+            "defaults": false,
+            "diff_against": null,
+            "diff_ignore_lines": null,
+            "intended_config": null,
+            "lines": [
+                "no ip access-list extended TEST_EXTENDED"
+            ],
+            "match": "line",
+            "multiline_delimiter": "@",
+            "parents": null,
+            "replace": "line",
+            "running_config": null,
+            "save_when": "never",
+            "src": null
+        }
+    },
+    "updates": [
+        "no ip access-list extended TEST_EXTENDED"
+    ]
+}
+2025-03-16 17:12:30,407 p=3106 u=hunter n=ansible INFO| PLAY RECAP **********************************************************************************
+2025-03-16 17:12:30,407 p=3106 u=hunter n=ansible INFO| switch1                    : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=1    ignored=0   
+2025-03-16 17:12:30,508 p=3111 u=hunter n=ansible INFO| shutdown complete
+2025-03-16 17:16:38,141 p=3209 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] ***********************************************
+2025-03-16 17:16:38,166 p=3209 u=hunter n=ansible INFO| TASK [A task to create an extended ACL] *****************************************************
+2025-03-16 17:16:38,417 p=3209 u=hunter n=ansible INFO| network_os is set to cisco.ios.ios
+2025-03-16 17:16:38,538 p=3214 u=hunter n=ansible INFO| [DEPRECATION WARNING]: The connection's stdin object is deprecated. Call 
+display.prompt_until(msg) instead. This feature will be removed in version 
+2.19. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-03-16 17:16:47,366 p=3209 u=hunter n=ansible INFO| changed: [switch1]
+2025-03-16 17:16:47,367 p=3209 u=hunter n=ansible INFO| PLAY RECAP **********************************************************************************
+2025-03-16 17:16:47,367 p=3209 u=hunter n=ansible INFO| switch1                    : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-03-16 17:16:47,468 p=3214 u=hunter n=ansible INFO| shutdown complete
+2025-03-16 17:17:53,341 p=3256 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] ***********************************************
+2025-03-16 17:17:53,352 p=3256 u=hunter n=ansible INFO| TASK [A task to create an extended ACL] *****************************************************
+2025-03-16 17:17:53,570 p=3256 u=hunter n=ansible INFO| network_os is set to cisco.ios.ios
+2025-03-16 17:17:53,686 p=3261 u=hunter n=ansible INFO| [DEPRECATION WARNING]: The connection's stdin object is deprecated. Call 
+display.prompt_until(msg) instead. This feature will be removed in version 
+2.19. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-03-16 17:18:02,519 p=3256 u=hunter n=ansible INFO| changed: [switch1]
+2025-03-16 17:18:02,519 p=3256 u=hunter n=ansible INFO| PLAY RECAP **********************************************************************************
+2025-03-16 17:18:02,519 p=3256 u=hunter n=ansible INFO| switch1                    : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-03-16 17:18:02,621 p=3261 u=hunter n=ansible INFO| shutdown complete
+2025-03-16 17:18:18,984 p=3289 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] ***********************************************
+2025-03-16 17:18:18,994 p=3289 u=hunter n=ansible INFO| TASK [A task to create an extended ACL] *****************************************************
+2025-03-16 17:18:19,214 p=3289 u=hunter n=ansible INFO| network_os is set to cisco.ios.ios
+2025-03-16 17:18:19,320 p=3294 u=hunter n=ansible INFO| [DEPRECATION WARNING]: The connection's stdin object is deprecated. Call 
+display.prompt_until(msg) instead. This feature will be removed in version 
+2.19. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-03-16 17:18:27,025 p=3289 u=hunter n=ansible INFO| changed: [switch1]
+2025-03-16 17:18:27,026 p=3289 u=hunter n=ansible INFO| PLAY RECAP **********************************************************************************
+2025-03-16 17:18:27,026 p=3289 u=hunter n=ansible INFO| switch1                    : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-03-16 17:18:27,127 p=3294 u=hunter n=ansible INFO| shutdown complete
+2025-03-16 17:20:06,682 p=3348 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] ***********************************************
+2025-03-16 17:20:06,693 p=3348 u=hunter n=ansible INFO| TASK [A task to create an extended ACL] *****************************************************
+2025-03-16 17:20:06,909 p=3348 u=hunter n=ansible INFO| network_os is set to cisco.ios.ios
+2025-03-16 17:20:07,017 p=3353 u=hunter n=ansible INFO| [DEPRECATION WARNING]: The connection's stdin object is deprecated. Call 
+display.prompt_until(msg) instead. This feature will be removed in version 
+2.19. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-03-16 17:20:14,671 p=3348 u=hunter n=ansible INFO| changed: [switch1]
+2025-03-16 17:20:14,672 p=3348 u=hunter n=ansible INFO| PLAY RECAP **********************************************************************************
+2025-03-16 17:20:14,672 p=3348 u=hunter n=ansible INFO| switch1                    : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-03-16 17:20:14,773 p=3353 u=hunter n=ansible INFO| shutdown complete
+2025-03-16 17:22:33,139 p=3396 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] ***********************************************
+2025-03-16 17:22:33,149 p=3396 u=hunter n=ansible INFO| TASK [A task to create an extended ACL] *****************************************************
+2025-03-16 17:22:33,366 p=3396 u=hunter n=ansible INFO| network_os is set to cisco.ios.ios
+2025-03-16 17:22:33,475 p=3401 u=hunter n=ansible INFO| [DEPRECATION WARNING]: The connection's stdin object is deprecated. Call 
+display.prompt_until(msg) instead. This feature will be removed in version 
+2.19. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-03-16 17:22:43,220 p=3396 u=hunter n=ansible INFO| changed: [switch1]
+2025-03-16 17:22:43,221 p=3396 u=hunter n=ansible INFO| PLAY RECAP **********************************************************************************
+2025-03-16 17:22:43,221 p=3396 u=hunter n=ansible INFO| switch1                    : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-03-16 17:22:43,322 p=3401 u=hunter n=ansible INFO| shutdown complete
+2025-03-16 17:28:28,187 p=3477 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] **********************************
+2025-03-16 17:28:28,211 p=3477 u=hunter n=ansible INFO| TASK [A task to create an extended ACL] ****************************************
+2025-03-16 17:28:28,449 p=3477 u=hunter n=ansible INFO| network_os is set to cisco.ios.ios
+2025-03-16 17:28:28,570 p=3477 u=hunter n=ansible INFO| fatal: [switch1]: FAILED! => {"changed": false, "msg": "Unsupported parameters for (cisco.ios.ios_acls) module: config.acls.aces.option.established. Supported parameters include: add_ext, any_options, com_security, dps, encode, eool, ext_ip, ext_security, finn, imitd, lsr, mtup, mtur, no_op, nsapa, record_route, router_alert, sdb, security, ssr, stream_id, timestamp, traceroute, ump, visa, zsu."}
+2025-03-16 17:28:28,570 p=3477 u=hunter n=ansible INFO| TASK [Remove incomplete ACL] ***************************************************
+2025-03-16 17:28:28,771 p=3482 u=hunter n=ansible INFO| [DEPRECATION WARNING]: The connection's stdin object is deprecated. Call 
+display.prompt_until(msg) instead. This feature will be removed in version 
+2.19. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-03-16 17:28:34,097 p=3477 u=hunter n=ansible WARNING| [WARNING]: To ensure idempotency and correct diff the input configuration lines
+should be similar to how they appear if present in the running configuration on
+device
+
+2025-03-16 17:28:34,097 p=3477 u=hunter n=ansible INFO| changed: [switch1]
+2025-03-16 17:28:34,100 p=3477 u=hunter n=ansible INFO| PLAY RECAP *********************************************************************
+2025-03-16 17:28:34,100 p=3477 u=hunter n=ansible INFO| switch1                    : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=1    ignored=0   
+2025-03-16 17:28:34,201 p=3482 u=hunter n=ansible INFO| shutdown complete
+2025-03-16 17:31:41,165 p=3563 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] **********************************
+2025-03-16 17:31:41,187 p=3563 u=hunter n=ansible INFO| TASK [A task to create an extended ACL] ****************************************
+2025-03-16 17:31:41,436 p=3563 u=hunter n=ansible INFO| network_os is set to cisco.ios.ios
+2025-03-16 17:31:41,557 p=3563 u=hunter n=ansible INFO| fatal: [switch1]: FAILED! => {"changed": false, "msg": "Unsupported parameters for (cisco.ios.ios_acls) module: config.acls.aces.tcp. Supported parameters include: destination, dscp, enable_fragments, evaluate, grant, log, log_input, option, precedence, protocol, protocol_options, remarks, sequence, source, time_range, tos, ttl."}
+2025-03-16 17:31:41,557 p=3563 u=hunter n=ansible INFO| TASK [Remove incomplete ACL] ***************************************************
+2025-03-16 17:31:41,754 p=3568 u=hunter n=ansible INFO| [DEPRECATION WARNING]: The connection's stdin object is deprecated. Call 
+display.prompt_until(msg) instead. This feature will be removed in version 
+2.19. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-03-16 17:31:47,067 p=3563 u=hunter n=ansible WARNING| [WARNING]: To ensure idempotency and correct diff the input configuration lines
+should be similar to how they appear if present in the running configuration on
+device
+
+2025-03-16 17:31:47,067 p=3563 u=hunter n=ansible INFO| changed: [switch1]
+2025-03-16 17:31:47,069 p=3563 u=hunter n=ansible INFO| PLAY RECAP *********************************************************************
+2025-03-16 17:31:47,069 p=3563 u=hunter n=ansible INFO| switch1                    : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=1    ignored=0   
+2025-03-16 17:31:47,169 p=3568 u=hunter n=ansible INFO| shutdown complete
+2025-03-16 17:33:02,061 p=3605 u=hunter n=ansible INFO| PLAY [A playbook for managing a Cisco device] **********************************
+2025-03-16 17:33:02,079 p=3605 u=hunter n=ansible INFO| TASK [A task to create an extended ACL] ****************************************
+2025-03-16 17:33:02,315 p=3605 u=hunter n=ansible INFO| network_os is set to cisco.ios.ios
+2025-03-16 17:33:02,433 p=3610 u=hunter n=ansible INFO| [DEPRECATION WARNING]: The connection's stdin object is deprecated. Call 
+display.prompt_until(msg) instead. This feature will be removed in version 
+2.19. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-03-16 17:33:15,650 p=3605 u=hunter n=ansible INFO| changed: [switch1]
+2025-03-16 17:33:15,651 p=3605 u=hunter n=ansible INFO| PLAY RECAP *********************************************************************
+2025-03-16 17:33:15,651 p=3605 u=hunter n=ansible INFO| switch1                    : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-03-16 17:33:15,752 p=3610 u=hunter n=ansible INFO| shutdown complete

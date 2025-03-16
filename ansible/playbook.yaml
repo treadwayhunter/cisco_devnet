@@ -1,0 +1,74 @@
+---
+- name: A playbook for managing a Cisco device
+  hosts: all
+  gather_facts: no
+  tasks:
+    #- name: Print ansible facts
+    #  debug:
+    #    var: ansible_facts
+
+    #- name: A task to create a standard ACL
+    #  cisco.ios.ios_acls:
+    #    config:
+    #      - afi: ipv4
+    #        acls:
+    #          - name: TEST_STANDARD
+    #            acl_type: standard
+    #            aces:
+    #              - grant: permit
+    #                source:
+    #                  address: 10.0.0.0
+    #                  wildcard_bits: 0.0.0.255
+    #                log:
+    #                  set: true
+    #              - grant: deny
+    #                source: 
+    #                  any: true
+    #    state: merged
+    - name: Create ACL with rollback if fails
+      block:
+        - name: A task to create an extended ACL
+          cisco.ios.ios_acls:
+            config:
+              - afi: ipv4
+                acls:
+                  - name: TEST_EXTENDED
+                    acl_type: extended
+                    aces:
+                      - grant: permit
+                        protocol: tcp                          
+                        source:
+                          address: 10.0.0.0
+                          wildcard_bits: 0.0.0.255
+                        destination:
+                          address: 10.10.10.0
+                          wildcard_bits: 0.0.0.255
+                        log:
+                          set: true
+                      - grant: permit
+                        protocol: udp                         
+                        source:
+                          address: 10.0.0.0
+                          wildcard_bits: 0.0.0.255
+                        destination:
+                          address: 10.10.10.0
+                          wildcard_bits: 0.0.0.255
+                        log:
+                          set: true
+                      - grant: permit
+                        protocol: tcp                         
+                        source:
+                          any: true
+                        destination:
+                          any: true
+                        protocol_options:
+                          tcp: 
+                            established: true
+                        log:
+                          set: true
+            state: merged
+      rescue:
+        - name: Remove incomplete ACL
+          cisco.ios.ios_config:
+            lines:
+              - no ip access-list extended TEST_EXTENDED

@@ -1,0 +1,13 @@
+all:
+  vars:
+    ansible_user: developer
+    ansible_password: C1sco12345
+    ansible_connection: network_cli
+    ansible_become: yes
+    ansible_become_method: enable
+    ansible_network_os: cisco.ios.ios
+
+group1:
+  hosts:
+    switch1:
+      ansible_host: 10.10.20.48
