@@ -1,0 +1,13 @@
+---
+- name: A play to reload a config
+  hosts: all
+  gather_facts: no
+  tasks:  
+    - name: A play to save a config
+      cisco.ios.ios_config:
+        save_when: modified
+
+    - name: A play to get a backup of the switch
+      cisco.ios.ios_config:
+        backup: true
+  
