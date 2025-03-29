@@ -867,3 +867,167 @@ deprecation_warnings=False in ansible.cfg.
 2025-03-16 18:06:50,565 p=4127 u=hunter n=ansible INFO| PLAY RECAP **********************************************************************************
 2025-03-16 18:06:50,566 p=4127 u=hunter n=ansible INFO| switch1                    : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 2025-03-16 18:06:50,667 p=4132 u=hunter n=ansible INFO| shutdown complete
+2025-03-29 21:27:19,378 p=1204 u=huntertreadway n=ansible | PLAY [A play to reload a config] **************************************************************************************************************************************************************************************************************************************************************************
+2025-03-29 21:27:19,463 p=1204 u=huntertreadway n=ansible | TASK [A play to save a config] ****************************************************************************************************************************************************************************************************************************************************************************
+2025-03-29 21:27:20,331 p=1204 u=huntertreadway n=ansible | network_os is set to cisco.ios.ios
+2025-03-29 21:27:20,332 p=1204 u=huntertreadway n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-03-29 21:27:20,346 p=1211 u=huntertreadway n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-03-29 21:27:20,713 p=1211 u=huntertreadway n=p=1211 u=huntertreadway | paramiko [10.10.20.48] | Connected (version 2.0, client Cisco-1.25)
+2025-03-29 21:27:22,163 p=1211 u=huntertreadway n=p=1211 u=huntertreadway | paramiko [10.10.20.48] | Authentication (password) successful!
+2025-03-29 21:27:31,603 p=1204 u=huntertreadway n=ansible | changed: [switch1]
+2025-03-29 21:27:31,609 p=1204 u=huntertreadway n=ansible | TASK [A play to get a backup of the switch] ***************************************************************************************************************************************************************************************************************************************************************
+2025-03-29 21:27:33,641 p=1204 u=huntertreadway n=ansible | changed: [switch1]
+2025-03-29 21:27:33,656 p=1204 u=huntertreadway n=ansible | PLAY RECAP ************************************************************************************************************************************************************************************************************************************************************************************************
+2025-03-29 21:27:33,656 p=1204 u=huntertreadway n=ansible | switch1                    : ok=2    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-03-29 21:27:33,757 p=1211 u=huntertreadway n=ansible | shutdown complete
+2025-03-29 21:34:30,032 p=1334 u=huntertreadway n=ansible | [DEPRECATION WARNING]: "include" is deprecated, use include_tasks/import_tasks instead. See https://docs.ansible.com/ansible-core/2.15/user_guide/playbooks_reuse_includes.html for details. This feature will be removed in version 2.16. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-03-29 21:34:30,033 p=1334 u=huntertreadway n=ansible | ERROR! conflicting action statements: hosts, gather_facts
+
+The error appears to be in '/Users/huntertreadway/Desktop/projects/cisco_devnet/ansible/backup.yaml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- name: A play to reload a config
+  ^ here
+
+2025-03-29 21:35:48,864 p=1365 u=huntertreadway n=ansible | ERROR! conflicting action statements: hosts, gather_facts
+
+The error appears to be in '/Users/huntertreadway/Desktop/projects/cisco_devnet/ansible/backup.yaml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- name: A play to reload a config
+  ^ here
+
+2025-03-29 21:36:14,428 p=1386 u=huntertreadway n=ansible | ERROR! conflicting action statements: hosts, gather_facts
+
+The error appears to be in '/Users/huntertreadway/Desktop/projects/cisco_devnet/ansible/backup.yaml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- name: A play to reload a config
+  ^ here
+
+2025-03-29 21:36:42,597 p=1409 u=huntertreadway n=ansible | ERROR! conflicting action statements: hosts, gather_facts
+
+The error appears to be in '/Users/huntertreadway/Desktop/projects/cisco_devnet/ansible/backup.yaml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- name: A play to reload a config
+  ^ here
+
+2025-03-29 21:37:11,835 p=1432 u=huntertreadway n=ansible | PLAY [A play to reload a switch, and successfully wait for it to come back online] ************************************************************************************************************************************************************************************************************************
+2025-03-29 21:37:11,842 p=1432 u=huntertreadway n=ansible | TASK [Gathering Facts] ************************************************************************************************************************************************************************************************************************************************************************************
+2025-03-29 21:37:12,726 p=1432 u=huntertreadway n=ansible | network_os is set to cisco.ios.ios
+2025-03-29 21:37:12,728 p=1432 u=huntertreadway n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-03-29 21:37:13,288 p=1439 u=huntertreadway n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-03-29 21:37:13,588 p=1439 u=huntertreadway n=p=1439 u=huntertreadway | paramiko [10.10.20.48] | Connected (version 2.0, client Cisco-1.25)
+2025-03-29 21:37:14,967 p=1439 u=huntertreadway n=p=1439 u=huntertreadway | paramiko [10.10.20.48] | Authentication (password) successful!
+2025-03-29 21:37:18,458 p=1432 u=huntertreadway n=ansible | ok: [switch1]
+2025-03-29 21:37:18,467 p=1432 u=huntertreadway n=ansible | TASK [A play to save a config] ****************************************************************************************************************************************************************************************************************************************************************************
+2025-03-29 21:37:25,713 p=1432 u=huntertreadway n=ansible | changed: [switch1]
+2025-03-29 21:37:25,719 p=1432 u=huntertreadway n=ansible | TASK [A play to get a backup of the switch] ***************************************************************************************************************************************************************************************************************************************************************
+2025-03-29 21:37:27,336 p=1432 u=huntertreadway n=ansible | changed: [switch1]
+2025-03-29 21:37:27,339 p=1432 u=huntertreadway n=ansible | TASK [Reload the switch] **********************************************************************************************************************************************************************************************************************************************************************************
+2025-03-29 21:37:28,196 p=1432 u=huntertreadway n=ansible | fatal: [switch1]: FAILED! => {"changed": false, "msg": "Unsupported parameters for (ios_command) module: answer, prompt. Supported parameters include: commands, interval, match, retries, wait_for (waitfor)."}
+2025-03-29 21:37:28,197 p=1432 u=huntertreadway n=ansible | PLAY RECAP ************************************************************************************************************************************************************************************************************************************************************************************************
+2025-03-29 21:37:28,197 p=1432 u=huntertreadway n=ansible | switch1                    : ok=3    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-03-29 21:37:28,298 p=1439 u=huntertreadway n=ansible | shutdown complete
+2025-03-29 21:38:47,744 p=1500 u=huntertreadway n=ansible | PLAY [A play to reload a switch, and successfully wait for it to come back online] ************************************************************************************************************************************************************************************************************************
+2025-03-29 21:38:47,751 p=1500 u=huntertreadway n=ansible | TASK [Gathering Facts] ************************************************************************************************************************************************************************************************************************************************************************************
+2025-03-29 21:38:48,638 p=1500 u=huntertreadway n=ansible | network_os is set to cisco.ios.ios
+2025-03-29 21:38:48,640 p=1500 u=huntertreadway n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-03-29 21:38:49,183 p=1507 u=huntertreadway n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-03-29 21:38:49,584 p=1507 u=huntertreadway n=p=1507 u=huntertreadway | paramiko [10.10.20.48] | Connected (version 2.0, client Cisco-1.25)
+2025-03-29 21:38:50,916 p=1507 u=huntertreadway n=p=1507 u=huntertreadway | paramiko [10.10.20.48] | Authentication (password) successful!
+2025-03-29 21:38:54,182 p=1500 u=huntertreadway n=ansible | ok: [switch1]
+2025-03-29 21:38:54,191 p=1500 u=huntertreadway n=ansible | TASK [A play to save a config] ****************************************************************************************************************************************************************************************************************************************************************************
+2025-03-29 21:39:01,254 p=1500 u=huntertreadway n=ansible | changed: [switch1]
+2025-03-29 21:39:01,260 p=1500 u=huntertreadway n=ansible | TASK [A play to get a backup of the switch] ***************************************************************************************************************************************************************************************************************************************************************
+2025-03-29 21:39:02,823 p=1500 u=huntertreadway n=ansible | changed: [switch1]
+2025-03-29 21:39:02,829 p=1500 u=huntertreadway n=ansible | TASK [Reload the switch] **********************************************************************************************************************************************************************************************************************************************************************************
+2025-03-29 21:39:06,272 p=1500 u=huntertreadway n=ansible | ok: [switch1]
+2025-03-29 21:39:06,278 p=1500 u=huntertreadway n=ansible | TASK [Poll the switch until it comes back] ****************************************************************************************************************************************************************************************************************************************************************
+2025-03-29 21:39:36,544 p=1507 u=huntertreadway n=ansible | persistent connection idle timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2025-03-29 21:39:36,656 p=1507 u=huntertreadway n=ansible | shutdown complete
+2025-03-29 21:46:36,414 p=1500 u=huntertreadway n=ansible | ok: [switch1]
+2025-03-29 21:46:36,420 p=1500 u=huntertreadway n=ansible | PLAY RECAP ************************************************************************************************************************************************************************************************************************************************************************************************
+2025-03-29 21:46:36,421 p=1500 u=huntertreadway n=ansible | switch1                    : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2025-03-29 21:47:18,320 p=1644 u=huntertreadway n=ansible | PLAY [A play to reload a switch, and successfully wait for it to come back online] ************************************************************************************************************************************************************************************************************************
+2025-03-29 21:47:18,327 p=1644 u=huntertreadway n=ansible | TASK [Gathering Facts] ************************************************************************************************************************************************************************************************************************************************************************************
+2025-03-29 21:47:19,219 p=1644 u=huntertreadway n=ansible | network_os is set to cisco.ios.ios
+2025-03-29 21:47:19,221 p=1644 u=huntertreadway n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-03-29 21:47:19,773 p=1652 u=huntertreadway n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-03-29 21:47:29,841 p=1644 u=huntertreadway n=ansible | fatal: [switch1]: FAILED! => {"ansible_facts": {}, "changed": false, "failed_modules": {"cisco.ios.ios_facts": {"failed": true, "invocation": {"module_args": {"available_network_resources": false, "gather_network_resources": null, "gather_subset": ["min"]}}, "msg": "timed out"}}, "msg": "The following modules failed to execute: cisco.ios.ios_facts\n"}
+2025-03-29 21:47:29,842 p=1644 u=huntertreadway n=ansible | PLAY RECAP ************************************************************************************************************************************************************************************************************************************************************************************************
+2025-03-29 21:47:29,842 p=1644 u=huntertreadway n=ansible | switch1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-03-29 21:47:43,598 p=1688 u=huntertreadway n=ansible | PLAY [A play to reload a switch, and successfully wait for it to come back online] ************************************************************************************************************************************************************************************************************************
+2025-03-29 21:47:43,604 p=1688 u=huntertreadway n=ansible | TASK [Gathering Facts] ************************************************************************************************************************************************************************************************************************************************************************************
+2025-03-29 21:47:44,491 p=1688 u=huntertreadway n=ansible | network_os is set to cisco.ios.ios
+2025-03-29 21:47:44,493 p=1688 u=huntertreadway n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-03-29 21:47:45,036 p=1695 u=huntertreadway n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-03-29 21:47:55,106 p=1688 u=huntertreadway n=ansible | fatal: [switch1]: FAILED! => {"ansible_facts": {}, "changed": false, "failed_modules": {"cisco.ios.ios_facts": {"failed": true, "invocation": {"module_args": {"available_network_resources": false, "gather_network_resources": null, "gather_subset": ["min"]}}, "msg": "timed out"}}, "msg": "The following modules failed to execute: cisco.ios.ios_facts\n"}
+2025-03-29 21:47:55,106 p=1688 u=huntertreadway n=ansible | PLAY RECAP ************************************************************************************************************************************************************************************************************************************************************************************************
+2025-03-29 21:47:55,107 p=1688 u=huntertreadway n=ansible | switch1                    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-03-29 21:47:59,798 p=1652 u=huntertreadway n=ansible | persistent connection idle timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2025-03-29 21:47:59,908 p=1652 u=huntertreadway n=ansible | shutdown complete
+2025-03-29 21:48:25,063 p=1695 u=huntertreadway n=ansible | persistent connection idle timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2025-03-29 21:48:25,168 p=1695 u=huntertreadway n=ansible | shutdown complete
+2025-03-29 21:54:38,937 p=1901 u=huntertreadway n=ansible | PLAY [A play to reload a switch, and successfully wait for it to come back online] ************************************************************************************************************************************************************************************************************************
+2025-03-29 21:54:38,943 p=1901 u=huntertreadway n=ansible | TASK [Gathering Facts] ************************************************************************************************************************************************************************************************************************************************************************************
+2025-03-29 21:54:39,817 p=1901 u=huntertreadway n=ansible | network_os is set to cisco.ios.ios
+2025-03-29 21:54:39,818 p=1901 u=huntertreadway n=ansible | [WARNING]: ansible-pylibssh not installed, falling back to paramiko
+
+2025-03-29 21:54:40,336 p=1908 u=huntertreadway n=ansible | [DEPRECATION WARNING]: PlayContext.verbosity is deprecated, use 
+ansible.utils.display.Display.verbosity instead. This feature will be removed 
+in version 2.18. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2025-03-29 21:54:40,628 p=1908 u=huntertreadway n=p=1908 u=huntertreadway | paramiko [10.10.20.48] | Connected (version 2.0, client Cisco-1.25)
+2025-03-29 21:54:43,205 p=1908 u=huntertreadway n=p=1908 u=huntertreadway | paramiko [10.10.20.48] | Authentication (password) successful!
+2025-03-29 21:54:55,908 p=1901 u=huntertreadway n=ansible | ok: [switch1]
+2025-03-29 21:54:55,917 p=1901 u=huntertreadway n=ansible | TASK [A play to save a config] ****************************************************************************************************************************************************************************************************************************************************************************
+2025-03-29 21:55:27,180 p=1901 u=huntertreadway n=ansible | changed: [switch1]
+2025-03-29 21:55:27,185 p=1901 u=huntertreadway n=ansible | TASK [A play to get a backup of the switch] ***************************************************************************************************************************************************************************************************************************************************************
+2025-03-29 21:55:31,757 p=1901 u=huntertreadway n=ansible | changed: [switch1]
+2025-03-29 21:55:31,763 p=1901 u=huntertreadway n=ansible | TASK [Reload the switch] **********************************************************************************************************************************************************************************************************************************************************************************
+2025-03-29 21:55:41,000 p=1901 u=huntertreadway n=ansible | ok: [switch1]
+2025-03-29 21:55:41,008 p=1901 u=huntertreadway n=ansible | TASK [Poll switch1 IP: 10.10.20.48] ***********************************************************************************************************************************************************************************************************************************************************************
+2025-03-29 21:56:11,265 p=1908 u=huntertreadway n=ansible | persistent connection idle timeout triggered, timeout value is 30 secs.
+See the timeout setting options in the Network Debug and Troubleshooting Guide.
+2025-03-29 21:56:11,375 p=1908 u=huntertreadway n=ansible | shutdown complete
+2025-03-29 22:02:02,385 p=1901 u=huntertreadway n=ansible | ok: [switch1]
+2025-03-29 22:02:02,394 p=1901 u=huntertreadway n=ansible | PLAY RECAP ************************************************************************************************************************************************************************************************************************************************************************************************
+2025-03-29 22:02:02,394 p=1901 u=huntertreadway n=ansible | switch1                    : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
