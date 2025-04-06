@@ -1,0 +1,28 @@
+---
+- name: A play to reload a switch, and successfully wait for it to come back online
+  hosts: all
+  gather_facts: yes
+  tasks:
+    - name: A play to save a config
+      cisco.ios.ios_config:
+        save_when: modified
+
+    - name: A play to get a backup of the switch
+      cisco.ios.ios_config:
+        backup: true
+    
+    - name: Reload the switch
+      ios_command:
+        commands:
+          - command: "reload"
+            prompt: "Proceed with reload"
+            answer: "yes"
+    
+    - name: "Poll {{ inventory_hostname }} IP: {{ ansible_host }}"
+      wait_for:
+        port: 22
+        host: "{{ ansible_host }}"
+        sleep: 30
+        delay: 30
+        timeout: 600
+        state: started
