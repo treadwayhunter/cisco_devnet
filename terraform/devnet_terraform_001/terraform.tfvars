@@ -1,0 +1,5 @@
+source_address = "10.1.1.5"
+receiver_ip = "10.1.1.3"
+receiver_port = "57500"
+example_periodic = "3000"
+cpu_periodic = "3000"
