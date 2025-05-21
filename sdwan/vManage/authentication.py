@@ -1,6 +1,7 @@
 import requests
 from constants import USERNAME, PASSWORD
-
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 class Authentication:
 
     def __init__(self, base_url):
@@ -15,23 +16,27 @@ class Authentication:
         }
 
         response = requests.post(url, data=payload, verify=False)
-        try:
-            cookies = response.headers['set-cookie']
-            jsessionid = cookies.split(';')
-            return(jsessionid[0])
-        except:
-            print('No valid JSESSION ID returned\n')
+        #try:
+        #    cookies = response.headers['set-cookie']
+        #    jsessionid = cookies.split(';')
+        #    return(jsessionid[0])
+        #except:
+        #    print('No valid JSESSION ID returned\n')
+        #    exit()
+        if response.status_code != 200:
+            print('Login Failed')
             exit()
+        
+        jsessionid = response.cookies.get('JSESSIONID')
+        return {"JSESSIONID": jsessionid}
     
     def get_token(self, jsessionid):
-        headers = {
-            'Cookie': jsessionid
-        }
+
         api = '/dataservice/client/token'
         url = self.base_url + api
-        response = requests.get(url, headers=headers, verify=False)
+        response = requests.get(url, cookies=jsessionid, verify=False)
         if response.status_code == 200:
-            return(response.text)
+            return response.text
         else:
             return None
     
