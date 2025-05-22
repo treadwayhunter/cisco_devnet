@@ -16,15 +16,8 @@ class Authentication:
         }
 
         response = requests.post(url, data=payload, verify=False)
-        #try:
-        #    cookies = response.headers['set-cookie']
-        #    jsessionid = cookies.split(';')
-        #    return(jsessionid[0])
-        #except:
-        #    print('No valid JSESSION ID returned\n')
-        #    exit()
         if response.status_code != 200:
-            print('Login Failed')
+            print('Login Failed:', response.status_code)
             exit()
         
         jsessionid = response.cookies.get('JSESSIONID')
