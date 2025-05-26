@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/meraki-webhook', methods=['POST'])
 def meraki_alert():
-    data = request.get_json()
+    data: dict = request.get_json()
 
     print("RECEIVED MERAKI ALERT!!!")
     print(data) # logs full JSON payload
